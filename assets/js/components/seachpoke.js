@@ -7,7 +7,7 @@ const pokeDetail = (detail,update) => {
   const pokebola=$('<div class="pokeBola col-md-2"></div>');
   const figure =$('<figure class="pokenvase"></figure>');
   const fondo =$('<div class="fondo text-center"></div>');
-  const icon1=$('<a class="icono pokedetalle" data-toggle="modal" data-ruta="'+ imgRuta +'" data-id="'+detail.entry_number+'" data-name="'+detail.pokemon_species.name+'" data-target="#pokeDetalles"></a>');
+  const icon1=$('<a href="#pokeDetalles" class="icono pokedetalle" data-toggle="modal" data-ruta="'+ imgRuta +'" data-id="'+detail.entry_number+'" data-name="'+detail.pokemon_species.name+'" data-target="#pokeDetalles"></a>');
   const icon2=$('<img class="icono" src="assets/icon/valentines-heart.png">');
   const icon3=$('<img class="icono" src="assets/icon/data.png">');
   const name = $('<p class="text-center font-mayu">'+ detail.pokemon_species.name + '</p>');

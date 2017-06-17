@@ -10,12 +10,12 @@ const render = (root) => {
       }));
 
    }
-    else {
-      alert("ultima esperanza");
-      wrapper.append(detallesPoke( _ => {
-          render(root);
-      }));
-  }
+  //   else {
+  //     alert("ultima esperanza");
+  //     wrapper.append(detallesPoke( _ => {
+  //         render(root);
+  //     }));
+  // }
 
   root.append(wrapper);
 };
