@@ -6,14 +6,22 @@ const render = (root) => {
 
   if (state.selectedStation == null) {
       wrapper.append(searchPoke( _ => {
-         render(root);
-       }));
-  }else{
-     wrapper.append(detallesPoke( _ =>{
           render(root);
-     }));
+      }));
+
+   }
+    else {
+      alert("ultima esperanza");
+      wrapper.append(detallesPoke( _ => {
+          render(root);
+      }));
   }
+
   root.append(wrapper);
+};
+
+const update = function (){
+  render(root);
 };
 
 const state = {
