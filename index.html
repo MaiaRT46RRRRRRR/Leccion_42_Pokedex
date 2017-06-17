@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokédex</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <secction>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="col-md-12 text-center">Pokédex</h1>
+            <div class="col-md-12">
+              <div class="col-md-6 border-botton">
+                <span class="icon glyphicon glyphicon-search"></span>
+                <input type="text" class="" id="buscar">
+              </div>
+              <button type="button" class="btn btn-default col-md-offset-5 col-md-1"  name="button">A-Z</button>
+            </div>
+          </div>
+          <div class="root col-md-12" ></div>
+        </div>
+      </div>
+    </secction>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- < jQuery (necesario para que funcionen los componentes de Bootstrap)
+    < <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <!--Incluir todos tus scripts apartir de este punto -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/utils/get-json.js"></script>
+    <script src="assets/js/utils/filter.js"></script>
+    <script src="assets/js/components/seachpoke.js"></script>
+    <script src="assets/js/components/pokeDetalles.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
