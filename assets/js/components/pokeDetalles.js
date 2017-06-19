@@ -2,20 +2,16 @@
 
 const detallesPoke = (rs) => {
     alert("entro al modal detalles Pokes");
-    const divModal = $('<div class="modal-dialog modal-lg" role="document"></div>');
-    const divContent = $('<div class="modal-content gris-modal>'+stations.selectedStation.capture_rate+'</div>');
-    const pokebola=$('<div class="pokeBola col-md-2"></div>');
-    const figure =$('<figure class="pokenvase"></figure>');
-    pokeBola.append(figure);
-    divContent.append(pokeBola);
+    const divModal = $('<div class="modal-dialog modal-lg" role="document">holi Boli</div>');
+    const divContent = $('<div class="modal-content>'+stations.selectedStation.capture_rate+'</div>');
+
     divModal.append(divContent);
-    // containerPoke.append(pokeApi);
 
     return divModal;
 }
 $('#pokeDetalles').on('click', function (event) {
-  console.log('Holi boli');
+  //alert('Sal Holi Boli')
   var modal = $(this);
-  modal.empty();
-  modal.append(detallesPoke(recipient, id, nombre));
+  //modal.empty();
+  modal.append(detallesPoke());
 });
